@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selwyn Castillo - Aspiring Developer at PixelPulse</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="Pixel-pulse-logo.png" />
+
+    <style>
+      .hero-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("GIF from GIFER.gif") center/cover no-repeat;
+        color: white;
+        padding: 60px 0;
+        text-align: center;
+        margin-bottom: 20px;
+        position: relative;
+        border-bottom: 3px solid #4a90e2;
+      }
+
+      .hero-section h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .hero-section p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+      }
+
+      .hero-content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 30px;
+        padding-top: 20px;
+      }
+
+      .profile-pic {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        margin-top: 10px;
+        transition: transform 0.2s ease;
+      }
+
+      .profile-pic:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      @media (max-width: 600px) {
+        .hero-content {
+          flex-direction: column;
+          gap: 16px;
+          text-align: center;
+        }
+
+        .profile-pic {
+          width: 90px;
+          height: 90px;
+        }
+
+        .hero-section h1 {
+          font-size: 2rem;
+        }
+
+        .hero-section p {
+          font-size: 1rem;
+        }
+
+        main.container {
+          padding: 0 10px;
+        }
+      }
+    </style>
+    <script>
+      function toggleNav() {
+        document.getElementById("mySidenav").classList.toggle("open");
+        document.getElementById("main").classList.toggle("shifted");
+      }
+
+      function showSection(sectionId) {
+        // Hide all content
+        const sections = document.querySelectorAll(".content-section");
+        sections.forEach((section) => {
+          section.style.display = "none";
+          section.classList.remove("active");
+        });
+
+        // Show the selected section
+        const selectedSection = document.getElementById(sectionId);
+        if (selectedSection) {
+          selectedSection.style.display = "block";
+          selectedSection.classList.add("active");
+        }
+
+        // Update active navigation
+        const navLinks = document.querySelectorAll(".nav-link");
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === "#" + sectionId) {
+            link.classList.add("active");
+          }
+        });
+        // Close the sidenav on mobile
+        if (window.innerWidth <= 768) {
+          toggleNav();
+        }
+      }
+
+      // Show About Me section by default
+      window.onload = function () {
+        showSection("about");
+      };
+    </script>
+  </head>
+
+  <body>
+    <!-- Sidenav -->
+    <div id="mySidenav" class="sidenav">
+      <div class="nav-profile">
+        <img
+          src="profilepic-blue.jpg"
+          alt="Profile Picture"
+          class="nav-profile-pic-blue"
+        />
+        <h3>Selwyn Castillo</h3>
+        <p style="text-align: center">Aspiring Developer at PixelPulse</p>
+      </div>
+      <a href="#about" onclick="showSection('about')" class="nav-link active"
+        >Home</a
+      >
+      <a href="#skills" onclick="showSection('skills')" class="nav-link"
+        >Top Skills</a
+      >
+      <a href="#projects" onclick="showSection('projects')" class="nav-link"
+        >Projects</a
+      >
+      <a href="#contact" onclick="showSection('contact')" class="nav-link"
+        >Contact</a
+      >
+      <a
+        href="#testimonials"
+        onclick="showSection('testimonials')"
+        class="nav-link"
+        >Testimonials</a
+      >
+      <a href="#credits" onclick="showSection('credits')" class="nav-link"
+        >Design Credits</a
+      >
+    </div>
+
+    <!-- Main content -->
+    <div id="main">
+      <button class="nav-toggle" onclick="toggleNav()">☰</button>
+
+      <!-- Header -->
+      <header class="hero-section">
+        <div class="hero-content">
+          <img
+            src="Pixel-pulse-logo.png"
+            alt="Profile Picture"
+            class="profile-pic"
+          />
+          <div>
+            <h1>Selwyn Castillo</h1>
+            <p>Aspiring Developer at PixelPulse</p>
+            <p style="font-size: 1rem; opacity: 0.8; margin-top: 10px">
+              Building the future, one pixel at a time
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <!-- Content Container -->
+      <div id="content-sections">
+        <!-- About Me -->
+        <section id="about" class="about-section content-section">
+          <h2>About Me & PixelPulse</h2>
+          <p>
+            I'm Selwyn Castillo, an aspiring developer currently working at
+            PixelPulse, where I'm learning to create innovative digital
+            solutions (and occasionally break them). At PixelPulse, I'm part of
+            a dynamic team that transforms ideas into pixel-perfect realities,
+            or at least pixel-okay realities when the deadline is tomorrow.
+          </p>
+
+          <p>
+            Working at PixelPulse has given me the opportunity to develop three
+            core competencies: <strong>problem-solving</strong> (mostly by
+            googling "why is my code not working"),
+            <strong>technical versatility</strong> (I can write "Hello World" in
+            7 different languages), and <strong>team collaboration</strong> (I'm
+            great at asking "can someone help me debug this?"). Every day brings
+            new learning opportunities, usually in the form of error messages
+            I've never seen before.
+          </p>
+
+          <p
+            style="
+              background-color: #e3f2fd;
+              padding: 15px;
+              border-left: 4px solid #2196f3;
+              font-style: italic;
+              margin-top: 20px;
+            "
+          >
+            <strong>PixelPulse Philosophy:</strong> "Every pixel matters, every
+            line of code tells a story, and every bug is just a feature waiting
+            to be discovered."
+          </p>
+        </section>
+
+        <!-- Projects Gallery -->
+        <section id="projects" class="projects-section content-section">
+          <h2>Projects</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <img
+                src="Portfolio.png"
+                alt="Portfolio Website"
+                class="project-image"
+              />
+              <div class="project-overlay">
+                <span class="project-name">Portfolio Website</span>
+              </div>
+            </div>
+            <div class="project-card">
+              <img
+                src="snik & Ladir.png"
+                alt="snik & Ladir"
+                class="project-image"
+              />
+              <div class="project-overlay">
+                <span class="project-name">Snik & Ladir</span>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="project2.jpg" alt="project2" class="project-image" />
+              <div class="project-overlay">
+                <span class="project-name">Bank System</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Top Skills -->
+        <section id="skills" class="skills-section content-section">
+          <h2>Top Skills</h2>
+          <ul class="skills-list">
+            <li>
+              I have strong problem-solving abilities just don't ask me to solve
+              them
+            </li>
+            <li>I know multiple programming languages but only use one</li>
+            <li>I work well in teams but only if they are good</li>
+            <li>
+              I can debug code for hours but still prefer to restart everything
+              from scratch
+            </li>
+            <li>I write clean code, after the third rewrite</li>
+          </ul>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="testimonials-section content-section">
+          <h2>What People Say About My Work</h2>
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  "Boy! This Selwyn's code is stronger than the Leviathan Axe!
+                  He slays bugs with the fury of a thousand gods. I have killed
+                  many developers, but none could debug like this mortal. His
+                  code is worthy of Valhalla itself!"
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">
+                  <img src="Kratos.jpg" alt="Kratos" class="author-photo" />
+                </div>
+                <div class="author-info">
+                  <h4>Kratos</h4>
+                  <p>God of War - Former Spartan General</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  "I am Zeus, King of Olympus! This mortal Selwyn's code
+                  commands lightning bolts of efficiency! He has the wisdom of
+                  Athena and the power of my thunder. Even I, ruler of all gods,
+                  bow to his debugging prowess!"
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">
+                  <img src="Zeus.jpg" alt="Zeus" class="author-photo" />
+                </div>
+                <div class="author-info">
+                  <h4>Zeus</h4>
+                  <p>King of Olympus - God of Thunder</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  "By Odin's beard! This Selwyn's code strikes with the force of
+                  Mjolnir! His debugging skills rival even the mighty Thor
+                  himself. He has the strength of Asgard and the wisdom of the
+                  All-Father. Truly, a warrior worthy of Valhalla!"
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">
+                  <img src="Thor.jpg" alt="Thor" class="author-photo" />
+                </div>
+                <div class="author-info">
+                  <h4>Thor</h4>
+                  <p>God of Thunder - Son of Odin</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <p>
+                  "Father always said to learn from the best, and Selwyn is
+                  definitely the best! His code is like the runes I study -
+                  complex but beautiful. He taught me that debugging is like
+                  hunting - you need patience and skill. Even Loki would be
+                  impressed by his tricks!"
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">
+                  <img src="Atreus.jpg" alt="Atreus" class="author-photo" />
+                </div>
+                <div class="author-info">
+                  <h4>Atreus</h4>
+                  <p>Son of Kratos - God of War</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Info -->
+        <section id="contact" class="contact-section content-section">
+          <h2>Contact</h2>
+          <p
+            style="
+              text-align: center;
+              font-size: 1.2rem;
+              color: #667eea;
+              font-weight: bold;
+              margin-bottom: 25px;
+            "
+          >
+            Ready to collaborate? Let's build something so amazing that at least
+            it's not totally terrible and I can get fired at PixelPulse!
+          </p>
+          <div class="contact-info">
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:selwyncastillo420@gmail.com"
+                >selwyncastillo420@gmail.com</a
+              >
+            </p>
+            <p>
+              <strong>Instagram:</strong>
+              <a
+                href="https://www.instagram.com/sielwyn?igsh=bzNtYXc3eHdvYnA3"
+                target="_blank"
+                >instagram.com/sielwyn</a
+              >
+            </p>
+            <p>
+              <strong>GitHub:</strong>
+              <a href="https://github.com/TeMMbest" target="_blank"
+                >github.com/TeMMbest</a
+              >
+            </p>
+            <p
+              style="
+                margin-top: 20px;
+                text-align: center;
+                font-style: italic;
+                color: #666;
+              "
+            >
+              <strong>PixelPulse Employee</strong> | Aspiring Developer | Tech
+              Enthusiast
+            </p>
+          </div>
+        </section>
+
+        <!-- Design Credits -->
+        <section id="credits" class="credits-section content-section">
+          <h2>Design Credits</h2>
+          <p>
+            The visual style and several UI patterns on this site were inspired
+            by a creator I follow on Instagram, and I've adapted the ideas for
+            learning purposes.
+          </p>
+          <div class="credits-info">
+            <p>
+              <strong>Creator:</strong>
+              <span id="credit-creator">[Dark CSS]</span>
+            </p>
+            <p>
+              <strong>Instagram:</strong>
+              <a
+                id="credit-instagram"
+                href="https://www.instagram.com/darkcss77?igsh=MTZ2bGl4ZjA2a3R5Mg=="
+                target="_blank"
+                rel="noopener noreferrer"
+                >instagram.com/darkcss77</a
+              >
+            </p>
+            <hr
+              style="
+                border: none;
+                border-top: 1px solid #cfe2ff;
+                margin: 10px 0;
+              "
+            />
+            <p>
+              <strong>Creator:</strong>
+              <span id="credit-creator-2">[The Coding Wizard]</span>
+            </p>
+            <p>
+              <strong>Instagram:</strong>
+              <a
+                id="credit-instagram-2"
+                href="https://www.instagram.com/the_coding_wizard?igsh=MTJ0dXNtZWtqajVkbA=="
+                target="_blank"
+                rel="noopener noreferrer"
+                >instagram.com/the_coding_wizard</a
+              >
+            </p>
+          </div>
+
+          <h3 class="credits-subtitle">Referenced CSS Elements</h3>
+          <ul class="credits-list">
+            <li>Sidebar navigation reveal and active indicator</li>
+            <li>Hero header gradient border and layout</li>
+            <li>Card hover lift effect on sections</li>
+            <li>Accent colors and button glow treatment</li>
+          </ul>
+        </section>
+      </div>
+
+      <footer class="footer">
+        <p>
+          &copy; 2025 Selwyn Castillo - PixelPulse Employee. All rights
+          reserved.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PixelPulse - Aspiring Developer</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      .hero-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+          url("GIF from GIFER.gif") center/cover no-repeat;
+        color: white;
+        padding: 60px 0;
+        text-align: center;
+        margin-bottom: 40px;
+        position: relative;
+      }
+
+      .hero-section h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .hero-section p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+      }
+
+      .hero-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+      }
+
+      .profile-pic {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        background: #fff;
+      }
+
+      @media (max-width: 600px) {
+        .hero-content {
+          flex-direction: column;
+          gap: 16px;
+          text-align: center;
+        }
+        .profile-pic {
+          width: 70px;
+          height: 70px;
+        }
+        .hero-section h1 {
+          font-size: 2rem;
+        }
+        .hero-section p {
+          font-size: 1rem;
+        }
+        main.container {
+          padding: 0 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero-section">
+      <div class="hero-content">
+        <img src="profilepic.jpg" alt="Profile Picture" class="profile-pic" />
+        <div>
+          <h1>Selwyn Castillo</h1>
+          <p>Aspiring Developer at PixelPulse</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="about-section">
+        <h2>About Me</h2>
+        <p>
+          I am an employee at PixelPulse and an aspiring developer focused on
+          growth in the tech field. I bring three key skills that support this
+          goal. I have strong problem-solving abilities, which help me handle
+          challenges with efficiency. I know multiple programming languages,
+          allowing me to adapt to different projects. I work well in teams,
+          making collaboration smooth and productive.
+        </p>
+
+        <p
+          style="
+            background-color: #e3f2fd;
+            padding: 15px;
+            border-left: 4px solid #2196f3;
+            font-style: italic;
+            margin-top: 20px;
+          "
+        >
+          <strong>Fun Fact:</strong> I love turning complex problems into more
+          problems, and hard solutions!
+        </p>
+      </section>
+
+      <section class="skills-section">
+        <h2>Top Skills</h2>
+        <ul class="skills-list">
+          <li>I have strong problem-solving abilities</li>
+          <li>I know multiple programming languages</li>
+          <li>I work well in teams</li>
+        </ul>
+      </section>
+
+      <section class="contact-section">
+        <h2>Get In Touch</h2>
+        <p
+          style="
+            text-align: center;
+            font-size: 1.2rem;
+            color: #667eea;
+            font-weight: bold;
+            margin-bottom: 25px;
+          "
+        >
+          Ready to collaborate? Let's make and Destroy Things!
+        </p>
+        <div class="contact-info">
+          <p>
+            <strong>Gmail:</strong>
+            <a href="mailto:selwyn.castillo@pixelpulse.dev"
+              >selwyn.castillo@pixelpulse.dev</a
+            >
+          </p>
+          <p>
+            <strong>Instagram:</strong>
+            <a
+              href="https://www.instagram.com/sielwyn?igsh=bzNtYXc3eHdvYnA3"
+              target="_blank"
+              >instagram.com/sielwyn</a
+            >
+          </p>
+          <p>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/TeMMbest" target="_blank"
+              >github.com/TeMMbest</a
+            >
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 PixelPulse. All rights reserved 2025.</p>
+    </footer>
+  </body>
+</html>

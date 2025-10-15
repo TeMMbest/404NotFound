@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Blog</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #e6e6e6;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 15px;
+      }
+
+      header {
+        background-color: #4a90e2;
+        padding: 1rem 0;
+        margin-bottom: 20px;
+      }
+
+      nav {
+        text-align: center;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        margin: 0 10px;
+        display: inline-block;
+      }
+
+      nav a:hover {
+        background-color: #357abd;
+      }
+
+      .content {
+        background-color: white;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        max-width: 800px;
+      }
+
+      h2 {
+        text-align: center;
+        color: #4a90e2;
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+
+      .blog-topics {
+        margin-top: 20px;
+      }
+
+      .topic-card {
+        background-color: #4a90e2;
+        padding: 15px;
+        margin: 10px 0;
+        text-align: center;
+        color: white;
+        border: 1px solid #357abd;
+      }
+
+      .topic-card:hover {
+        background-color: #357abd;
+      }
+
+      .topic-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .topic-card p {
+        font-size: 0.9rem;
+        opacity: 0.9;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 30px;
+      }
+
+      .social-links {
+        margin-top: 10px;
+      }
+
+      .social-links a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+        margin: 0 5px;
+        border: 1px solid white;
+      }
+
+      .social-links a:hover {
+        background-color: white;
+        color: #333;
+      }
+
+      .welcome-text {
+        text-align: center;
+        font-size: 1.1rem;
+        color: #666;
+        margin-bottom: 2rem;
+      }
+
+      @media (max-width: 768px) {
+        .content {
+          margin: 1rem;
+          padding: 2rem;
+        }
+
+        h2 {
+          font-size: 2rem;
+        }
+
+        nav {
+          gap: 1rem;
+        }
+
+        .social-links {
+          gap: 1rem;
+        }
+
+        .blog-topics {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .content {
+          padding: 1.5rem;
+        }
+
+        h2 {
+          font-size: 1.8rem;
+        }
+
+        nav a {
+          padding: 0.4rem 0.8rem;
+          font-size: 0.9rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <a href="home.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="content">
+        <h2>Personal Blog</h2>
+        <p class="welcome-text">
+          Explore my thoughts and experiences in this one hell of a ride through
+          technology and programming
+        </p>
+
+        <div class="blog-topics">
+          <div class="topic-card">
+            <h3>Networking</h3>
+            <p>Network protocols, security, and infrastructure</p>
+          </div>
+          <div class="topic-card">
+            <h3>Programming</h3>
+            <p>Software development and coding practices</p>
+          </div>
+          <div class="topic-card">
+            <h3>Java</h3>
+            <p>Java development and best practices</p>
+          </div>
+          <div class="topic-card">
+            <h3>C++</h3>
+            <p>System programming and performance optimization</p>
+          </div>
+          <div class="topic-card">
+            <h3>NetBeans</h3>
+            <p>IDE tips, tricks, and development workflow</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>Connect With Me:</p>
+        <div class="social-links">
+          <a
+            href="https://web.facebook.com/selwyn.castillo.19/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Facebook</a
+          >
+          <a
+            href="https://www.instagram.com/sielwyn?igsh=bzNtYXc3eHdvYnA3"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

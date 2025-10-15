@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me - Personal Blog</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #e6e6e6;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 15px;
+      }
+
+      header {
+        background-color: #4a90e2;
+        padding: 1rem 0;
+        margin-bottom: 20px;
+      }
+
+      nav {
+        text-align: center;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        margin: 0 10px;
+        display: inline-block;
+      }
+
+      nav a:hover {
+        background-color: #357abd;
+      }
+
+      .content {
+        background-color: white;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        max-width: 800px;
+      }
+
+      h2 {
+        text-align: center;
+        color: #4a90e2;
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+
+      form {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        color: #333;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        background-color: #fff;
+      }
+
+      input[type="text"]:focus,
+      input[type="email"]:focus,
+      textarea:focus {
+        outline: none;
+        border-color: #4a90e2;
+      }
+
+      input[type="submit"] {
+        background-color: #4a90e2;
+        color: white;
+        padding: 10px 20px;
+        border: 1px solid #357abd;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #357abd;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 30px;
+      }
+
+      .social-links {
+        margin-top: 10px;
+      }
+
+      .social-links a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+        margin: 0 5px;
+        border: 1px solid white;
+      }
+
+      .social-links a:hover {
+        background-color: white;
+        color: #333;
+      }
+
+      @media (max-width: 768px) {
+        .content {
+          margin: 1rem;
+          padding: 2rem;
+        }
+
+        h2 {
+          font-size: 2rem;
+        }
+
+        nav {
+          gap: 1rem;
+        }
+
+        .social-links {
+          gap: 1rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .content {
+          padding: 1.5rem;
+        }
+
+        h2 {
+          font-size: 1.8rem;
+        }
+
+        nav a {
+          padding: 0.4rem 0.8rem;
+          font-size: 0.9rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <a href="home.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="content">
+        <h2>Contact Me</h2>
+        <p style="text-align: center; margin-bottom: 2rem">
+          If you'd like to get in touch, feel free to send a message using the
+          form below:
+        </p>
+
+        <form
+          method="post"
+          action="mailto:rogerargarin2318.com"
+          enctype="multipart/form-data"
+        >
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <input type="submit" value="Send Message" />
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>Connect With Me:</p>
+        <div class="social-links">
+          <a
+            href="https://web.facebook.com/selwyn.castillo.19/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Facebook</a
+          >
+          <a
+            href="https://www.instagram.com/sielwyn?igsh=bzNtYXc3eHdvYnA3"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
