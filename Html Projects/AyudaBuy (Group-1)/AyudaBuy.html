@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AyudaBuy</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="site.css" />
+
+    <link rel="icon" href="Ayuda-Logo.png" type="image/png" />
+  </head>
+
+  <body class="site-body">
+    <button
+      class="nav-toggle"
+      aria-label="Open quick nav"
+      aria-expanded="false"
+    >
+      ☰
+    </button>
+    <nav class="sidenav compact" aria-label="Quick actions">
+      <a class="nav-link" href="feedback.html" title="Feedback">
+        <span class="fa fa-comment-dots" aria-hidden="true"></span>
+        <span class="label">Feedback</span>
+      </a>
+      <a class="nav-link" href="developers.html" title="Developers">
+        <span class="fa fa-users" aria-hidden="true"></span>
+        <span class="label">Developers</span>
+      </a>
+    </nav>
+    <div class="site-page container-fluid py-5">
+      <div class="site-card shadow-lg rounded-4">
+        <header
+          class="site-header d-flex align-items-center justify-content-between"
+        >
+          <div class="site-brand d-flex align-items-center">
+            <a
+              class="d-flex align-items-center text-decoration-none"
+              href="AyudaBuy.html"
+              title="AyudaBuy home"
+            >
+              <img
+                class="site-logo"
+                src="Ayuda-Logo.png"
+                alt="AyudaBuy logo"
+                width="52"
+                height="52"
+              />
+              <div class="site-title">
+                <h1 class="site-name mb-0">AyudaBuy</h1>
+                <p class="site-tagline mb-0">
+                  Online Grocery platform, made simple for you.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="site-actions text-end"></div>
+        </header>
+
+        <section class="products-section">
+          <div class="section-heading px-2">
+            <p class="eyebrow text-uppercase small mb-1">Store</p>
+            <h3 class="section-title h5 mb-1">
+              AyudaBuy — A sari‑sari store inspired
+            </h3>
+            <p class="section-subtext">
+              A tiny selection of AyudaBuy essentials: canned goods and noodles.
+            </p>
+          </div>
+          <div class="products-grid px-2">
+            <article class="product-card">
+              <img
+                class="product-image"
+                src="img/pancit.png"
+                alt="Lucky Me Pancit Canton"
+              />
+              <h4 class="product-title">Lucky Me Pancit Canton (70g)</h4>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <span class="product-price">₱70.00</span>
+                  <span class="shipping-note"
+                    >+ ₱50 shipping <br />(per order)</span
+                  >
+                </div>
+                <div class="text-muted small">
+                  Original galing sa commercial mismo!
+                </div>
+              </div>
+              <div class="product-actions">
+                <button
+                  class="btn btn-outline-secondary btn-sm"
+                  type="button"
+                  disabled
+                >
+                  View
+                </button>
+                <button
+                  class="btn btn-primary btn-sm btn-add"
+                  data-id="p1"
+                  data-name="Lucky Me Pancit Canton"
+                  data-price="70"
+                  data-img="img/pancit.png"
+                >
+                  Add to cart
+                </button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <img
+                class="product-image"
+                src="img/tuna.png"
+                alt="Century Tuna Flakes"
+              />
+              <h4 class="product-title">Century Tuna Flakes in Oil (180g)</h4>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <span class="product-price">₱200.00</span>
+                  <span class="shipping-note"
+                    >+ ₱50 shipping <br />
+                    (per order)</span
+                  >
+                </div>
+                <div class="text-muted small">
+                  High Quality Tuna galing sa West Philippine Sea!
+                </div>
+              </div>
+              <div class="product-actions">
+                <button
+                  class="btn btn-outline-secondary btn-sm"
+                  type="button"
+                  disabled
+                >
+                  View
+                </button>
+                <button
+                  class="btn btn-primary btn-sm btn-add"
+                  data-id="p2"
+                  data-name="Century Tuna Flakes"
+                  data-price="200"
+                  data-img="img/tuna.png"
+                >
+                  Add to cart
+                </button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <img
+                class="product-image"
+                src="img/sardines.png"
+                alt="555 Sardines"
+              />
+              <h4 class="product-title">555 Sardines in Tomato Sauce (155g)</h4>
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <span class="product-price">₱150.00</span>
+                  <span class="shipping-note"
+                    >+ ₱50 shipping <br />
+                    (per order)</span
+                  >
+                </div>
+                <div class="text-muted small">
+                  High Quality Sardines imported galing boracay!
+                </div>
+              </div>
+              <div class="product-actions">
+                <button
+                  class="btn btn-outline-secondary btn-sm"
+                  type="button"
+                  disabled
+                >
+                  View
+                </button>
+                <button
+                  class="btn btn-primary btn-sm btn-add"
+                  data-id="p3"
+                  data-name="555 Sardines"
+                  data-price="150"
+                  data-img="img/sardines.png"
+                >
+                  Add to cart
+                </button>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="site.js"></script>
+  </body>
+</html>
+
