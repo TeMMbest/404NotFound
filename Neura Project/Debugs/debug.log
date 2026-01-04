@@ -1,0 +1,36 @@
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "C", "location": "ai_tts_bot.py:108", "message": "Audio captured, before recognition", "data": {"audio_exists": true}, "timestamp": 1767097955498}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "C", "location": "ai_tts_bot.py:121", "message": "UnknownValueError", "data": {"error": ""}, "timestamp": 1767097956541}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "C", "location": "ai_tts_bot.py:205", "message": "After listen()", "data": {"user_input_is_none": true}, "timestamp": 1767097956541}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "A", "location": "ai_tts_bot.py:95", "message": "listen() entry", "data": {"microphone_available": true}, "timestamp": 1767097956543}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "A", "location": "ai_tts_bot.py:99", "message": "Before microphone context in listen()", "data": {}, "timestamp": 1767097956543}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "A", "location": "ai_tts_bot.py:103", "message": "Inside microphone context", "data": {}, "timestamp": 1767097956671}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "C", "location": "ai_tts_bot.py:108", "message": "Audio captured, before recognition", "data": {"audio_exists": true}, "timestamp": 1767097961584}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "C", "location": "ai_tts_bot.py:121", "message": "UnknownValueError", "data": {"error": ""}, "timestamp": 1767097963125}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "C", "location": "ai_tts_bot.py:205", "message": "After listen()", "data": {"user_input_is_none": true}, "timestamp": 1767097963125}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "A", "location": "ai_tts_bot.py:95", "message": "listen() entry", "data": {"microphone_available": true}, "timestamp": 1767097963127}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "A", "location": "ai_tts_bot.py:99", "message": "Before microphone context in listen()", "data": {}, "timestamp": 1767097963127}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "A", "location": "ai_tts_bot.py:103", "message": "Inside microphone context", "data": {}, "timestamp": 1767097963219}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "C", "location": "ai_tts_bot.py:108", "message": "Audio captured, before recognition", "data": {"audio_exists": true}, "timestamp": 1767097965857}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "C", "location": "ai_tts_bot.py:121", "message": "UnknownValueError", "data": {"error": ""}, "timestamp": 1767097966705}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "C", "location": "ai_tts_bot.py:205", "message": "After listen()", "data": {"user_input_is_none": true}, "timestamp": 1767097966706}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "A", "location": "ai_tts_bot.py:95", "message": "listen() entry", "data": {"microphone_available": true}, "timestamp": 1767097966707}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "A", "location": "ai_tts_bot.py:99", "message": "Before microphone context in listen()", "data": {}, "timestamp": 1767097966707}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "A", "location": "ai_tts_bot.py:103", "message": "Inside microphone context", "data": {}, "timestamp": 1767097966807}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "C", "location": "ai_tts_bot.py:108", "message": "Audio captured, before recognition", "data": {"audio_exists": true}, "timestamp": 1767097970045}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "C", "location": "ai_tts_bot.py:121", "message": "UnknownValueError", "data": {"error": ""}, "timestamp": 1767097970871}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "C", "location": "ai_tts_bot.py:205", "message": "After listen()", "data": {"user_input_is_none": true}, "timestamp": 1767097970872}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "A", "location": "ai_tts_bot.py:95", "message": "listen() entry", "data": {"microphone_available": true}, "timestamp": 1767097970873}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "A", "location": "ai_tts_bot.py:99", "message": "Before microphone context in listen()", "data": {}, "timestamp": 1767097970873}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "A", "location": "ai_tts_bot.py:103", "message": "Inside microphone context", "data": {}, "timestamp": 1767097970940}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "C", "location": "ai_tts_bot.py:108", "message": "Audio captured, before recognition", "data": {"audio_exists": true}, "timestamp": 1767097973070}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "C", "location": "ai_tts_bot.py:121", "message": "UnknownValueError", "data": {"error": ""}, "timestamp": 1767097973625}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "C", "location": "ai_tts_bot.py:205", "message": "After listen()", "data": {"user_input_is_none": true}, "timestamp": 1767097973625}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "A", "location": "ai_tts_bot.py:95", "message": "listen() entry", "data": {"microphone_available": true}, "timestamp": 1767097973625}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "A", "location": "ai_tts_bot.py:99", "message": "Before microphone context in listen()", "data": {}, "timestamp": 1767097973625}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "A", "location": "ai_tts_bot.py:103", "message": "Inside microphone context", "data": {}, "timestamp": 1767097973689}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "C", "location": "ai_tts_bot.py:108", "message": "Audio captured, before recognition", "data": {"audio_exists": true}, "timestamp": 1767097975925}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "C", "location": "ai_tts_bot.py:121", "message": "UnknownValueError", "data": {"error": ""}, "timestamp": 1767097976448}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "C", "location": "ai_tts_bot.py:205", "message": "After listen()", "data": {"user_input_is_none": true}, "timestamp": 1767097976449}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "A", "location": "ai_tts_bot.py:95", "message": "listen() entry", "data": {"microphone_available": true}, "timestamp": 1767097976450}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "A", "location": "ai_tts_bot.py:99", "message": "Before microphone context in listen()", "data": {}, "timestamp": 1767097976450}
+{"sessionId": "debug-session", "runId": "run1", "hypothesisId": "A", "location": "ai_tts_bot.py:103", "message": "Inside microphone context", "data": {}, "timestamp": 1767097976515}
